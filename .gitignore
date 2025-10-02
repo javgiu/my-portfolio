@@ -1,0 +1,10 @@
+# Operative System
+.DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Temporal
+*.log
