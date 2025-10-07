@@ -69,7 +69,7 @@
     </section>
 
     <!-- About: Section about you -->
-    <section id="about" class="glass-card">
+    <section id="about" class="glass-card scroll-reveal">
       <h2 class="gradient-text section-title">About Me</h2>
       <p>
         Here you can write a brief description about yourself, your passion for
@@ -83,40 +83,82 @@
     </section>
 
     <!-- Projects: Projects section -->
-    <section id="projects" class="section-container">
+    <section id="projects" class="section-container scroll-reveal">
       <h2 class="gradient-text section-title">My Projects</h2>
       <div class="project-grid">
-        <article class="project glass-card">
-          <h3>Project 1</h3>
-          <p>
-            Brief project description, technologies used and what you learned.
-          </p>
-          <a href="#" target="_blank">View project</a>
-          <a href="#" target="_blank">Source code</a>
+        <article class="project glass-card scroll-reveal-left">
+          <div class="project-image">
+            <img
+              src="https://placehold.co/400x250/1a1a1a/3498db?text=Project+1"
+              alt="Project 1 screenshot"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Project 1</h3>
+            <p>
+              Brief project description, technologies used and what you learned.
+            </p>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank"
+              ><i class="fas fa-external-link-alt"></i>View project</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fab fa-github"></i>Source code</a
+            >
+          </div>
         </article>
 
-        <article class="project glass-card">
-          <h3>Project 2</h3>
-          <p>
-            Brief project description, technologies used and what you learned.
-          </p>
-          <a href="#" target="_blank">View project</a>
-          <a href="#" target="_blank">Source code</a>
+        <article class="project glass-card scroll-reveal-right">
+          <div class="project-image">
+            <img
+              src="https://placehold.co/400x250/1a1a1a/3498db?text=Project+2"
+              alt="Project 2 screenshot"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Project 2</h3>
+            <p>
+              Brief project description, technologies used and what you learned.
+            </p>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank"
+              ><i class="fas fa-external-link-alt"></i>View project</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fab fa-github"></i>Source code</a
+            >
+          </div>
         </article>
 
-        <article class="project glass-card">
-          <h3>Project 3</h3>
-          <p>
-            Brief project description, technologies used and what you learned.
-          </p>
-          <a href="#" target="_blank">View project</a>
-          <a href="#" target="_blank">Source code</a>
+        <article class="project glass-card scroll-reveal-scale">
+          <div class="project-image">
+            <img
+              src="https://placehold.co/400x250/1a1a1a/3498db?text=Project+3"
+              alt="Project 3 screenshot"
+            />
+          </div>
+          <div class="project-content">
+            <h3>Project 3</h3>
+            <p>
+              Brief project description, technologies used and what you learned.
+            </p>
+          </div>
+          <div class="project-links">
+            <a href="#" target="_blank"
+              ><i class="fas fa-external-link-alt"></i>View project</a
+            >
+            <a href="#" target="_blank"
+              ><i class="fab fa-github"></i>Source code</a
+            >
+          </div>
         </article>
       </div>
     </section>
 
     <!-- Skills: Technical skills section -->
-    <section id="skills" class="section-container">
+    <section id="skills" class="section-container scroll-reveal">
       <h2 class="gradient-text section-title">Technical Skills</h2>
       <div class="skills-container">
         <div class="skill-category glass-card">
@@ -152,7 +194,7 @@
     </section>
 
     <!-- Contact: Contact form -->
-    <section id="contact" class="section-container">
+    <section id="contact" class="section-container scroll-reveal">
       <h2 class="gradient-text section-title">Contact</h2>
       <p>Have a project in mind? I'd love to hear about it!</p>
 
@@ -201,6 +243,10 @@
         </div>
       </div>
     </footer>
+
+    <button id="back-to-top" class="back-to-top" aria-label="Back to Top">
+      <i class="fas fa-arrow-up"></i>
+    </button>
 
     <script src="script.js"></script>
   </body>

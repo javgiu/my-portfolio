@@ -55,5 +55,43 @@ document.addEventListener('DOMContentLoaded', function() {
         });
     });
 
-    console.log('Navigation links:', navLinks);
+    const observerOptions = {
+        threshold: 0.1,
+        rootMargin: "0px 0px -50px 0px"
+    };
+
+    const observer = new IntersectionObserver(function (entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                entry.target.classList.add("active");
+                observer.unobserve(entry.target);
+            }
+        });
+    }, observerOptions);
+
+    const revealElements = document.querySelectorAll(".scroll-reveal, .scroll-reveal-left, .scroll-reveal-right, .scroll-reveal-scale");
+    revealElements.forEach(element => {
+        observer.observe(element);
+    });
+
+    // Back to top button functionality
+
+    const backToTopButton = document.getElementById("back-to-top");
+    // Show/hide button based on scroll position
+    window.addEventListener("scroll", function () {
+        if (window.pageYOffset > 300) {
+            backToTopButton.classList.add("show");
+        } else {
+            backToTopButton.classList.remove("show");
+       }
+    });
+
+    backToTopButton.addEventListener("click", function () {
+        window.scrollTo({
+            top: 0,
+            behavior: "smooth"
+        });
+    });
+
+    console.log(backToTopButton)
 });
